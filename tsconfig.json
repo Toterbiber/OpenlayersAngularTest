@@ -1,7 +1,17 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
     "baseUrl": "./",
+    "paths": {
+      "ol": [
+        "node_modules/ol/src"
+      ],
+      "ol/*": [
+        "node_modules/ol/src/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -18,5 +28,8 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "node_modules/ol/**/*.js"
+  ]
 }
