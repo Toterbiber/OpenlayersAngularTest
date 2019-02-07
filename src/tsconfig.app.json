@@ -6,6 +6,8 @@
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "**/*.js",
+    "../node_modules/ol/**/*.js"
   ]
 }

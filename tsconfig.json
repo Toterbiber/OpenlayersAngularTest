@@ -3,15 +3,6 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "baseUrl": "./",
-    "paths": {
-      "ol": [
-        "node_modules/ol/src"
-      ],
-      "ol/*": [
-        "node_modules/ol/src/*"
-      ]
-    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -21,15 +12,13 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
     "lib": [
       "es2018",
       "dom"
     ]
   },
   "include": [
+    "src/**/*",
     "node_modules/ol/**/*.js"
   ]
 }
